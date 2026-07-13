@@ -41,6 +41,9 @@ paths:
   /signup:
     $ref: './paths/tenant/signup-init.yaml'
 
+  /signup/verify:
+    $ref: './paths/tenant/signup-verify.yaml'
+
   /signup/finish:
     $ref: './paths/tenant/signup-finish.yaml'
 
