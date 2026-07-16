@@ -1,0 +1,37 @@
+post:
+  tags: [Admin]
+  summary: Invite a user to join the organisation
+  description: >
+    Admin requests a user to join the organisation by sending an invitation
+    notification email with a join link to the user's email address.
+  operationId: inviteUser
+  parameters:
+    - $ref: '../../common/components/schemas.yaml#/components/parameters/TenantHeader'
+  requestBody:
+    description: Invitation details for the user to join the organisation
+    content:
+      application/json:
+        schema:
+          $ref: '../../common/components/user/schema.yaml#/InviteUserRequest'
+    required: true
+  responses:
+    '201':
+      description: Invitation sent successfully
+      content:
+        application/json:
+          schema:
+            $ref: '../../common/components/user/schema.yaml#/InviteUserResponse'
+    400:
+      description: Invalid information supplied
+      content:
+        application/problem+json:
+          schema:
+            $ref: '../../common/components/schemas.yaml#/components/schemas/Problem'
+    409:
+      description: User already exists in the organisation
+      content:
+        application/problem+json:
+          schema:
+            $ref: '../../common/components/schemas.yaml#/components/schemas/Problem'
+  security:
+    - oauth2: [ admins, super_admins ]

@@ -58,6 +58,9 @@ paths:
   /admin/users/{login}:
     $ref: './paths/user/managed-user.yaml'
 
+  /api/admin/invite:
+    $ref: './paths/user/invite-user.yaml'
+
   /activate:
     $ref: './paths/user/activate.yaml'
 

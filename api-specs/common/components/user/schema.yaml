@@ -167,6 +167,44 @@ UserRegistrationResponse:
       type: string
       example: test@test
 
+InviteUserRequest:
+  type: object
+  required:
+    - email
+  properties:
+    email:
+      type: string
+      format: email
+      example: jane.doe@example.com
+    firstName:
+      type: string
+      example: Jane
+    lastName:
+      type: string
+      example: Doe
+
+InviteUserResponse:
+  type: object
+  properties:
+    tenantId:
+      type: string
+      example: "2b5901be-9f28-4fa4-b565-706cbbc699c5"
+    email:
+      type: string
+      example: jane.doe@example.com
+    firstName:
+      type: string
+      example: Jane
+    lastName:
+      type: string
+      example: Doe
+    status:
+      type: string
+      example: PENDING
+    message:
+      type: string
+      example: Invitation email sent successfully
+
 PasswordChangeRequest:
   type: object
   required:
