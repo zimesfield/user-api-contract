@@ -39,7 +39,7 @@ UserResponse:
       example: Odinaka
     email:
       type: string
-      example: test@test
+      example: test@zimesfield.com
     imageUrl:
       type: string
       example: qazwsx
@@ -100,7 +100,7 @@ AdminRegistrationRequest:
         example: Odinaka
       email:
         type: string
-        example: test@test
+      example: test@zimesfield.com
       imageUrl:
         type: string
         example: qazwsx
@@ -132,7 +132,7 @@ UserRegistrationRequest:
       example: Field
     email:
       type: string
-      example: test@test
+      example: test@zimesfield.com
     phone:
       type: string
       example: 07012345678
@@ -165,7 +165,7 @@ UserRegistrationResponse:
       example: Field
     email:
       type: string
-      example: test@test
+      example: test@zimesfield.com
 
 PasswordChangeRequest:
   type: object
@@ -218,7 +218,7 @@ SignupResponse:
       example: Zimesfield Limited
     email:
       type: string
-      example: test@test
+      example: test@zimesfield.com
     status:
       type: string
       example: PENDING
