@@ -133,7 +133,7 @@ components:
           example: test@zimesfield.com
         password:
           type: string
-          example: admin123
+          example: test1234
         rememberMe:
           type: boolean
           default: false

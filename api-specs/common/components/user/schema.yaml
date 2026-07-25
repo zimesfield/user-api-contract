@@ -205,7 +205,7 @@ SignupRequest:
       example: Zimesfield Limited
     email:
       type: string
-      example: test@test
+      example: test@zimesfield.com
 
 SignupResponse:
   type: object
